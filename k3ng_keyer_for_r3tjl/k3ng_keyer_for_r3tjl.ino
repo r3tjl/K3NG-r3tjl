@@ -7,7 +7,7 @@
 
 
 
-/*
+/* to R3TJL configuration
 
  K3NG Arduino CW Keyer
 
