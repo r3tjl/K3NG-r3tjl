@@ -19241,13 +19241,13 @@ void initialize_display(){
         if (LCD_ROWS == 2) {
           lcd_center_print_timed(custom_startup_field, 1, 4000);    // display the custom field on the second line of the display, maximum field length is the number of columns
         } else if (LCD_ROWS > 2) {
-	        lcd_center_print_timed("hi", 1, 4000);                    // display 'hi' on the 2nd line anyway
+	        lcd_center_print_timed("Hi R3TJL", 1, 4000);                    // display 'hi' on the 2nd line anyway
           lcd_center_print_timed(custom_startup_field, 2, 4000);    // display the custom field on the third line of the display, maximum field length is the number of columns
 	      }
       #else
-        lcd_center_print_timed("hi", 1, 4000);
+        lcd_center_print_timed("Hi R3TJL", 1, 4000);
       #endif                                                        // OPTION_PERSONALIZED_STARTUP_SCREEN
-      if (LCD_ROWS > 3) lcd_center_print_timed("V: " + String(CODE_VERSION), 3, 4000);      // display the code version on the fourth line of the display
+      if (LCD_ROWS > 3) lcd_center_print_timed(String(CODE_VERSION), 3, 4000);      // display the code version on the fourth line of the display
     }
   #endif //FEATURE_DISPLAY
 
